@@ -1,73 +1,70 @@
 # print
-print("Hello World")
-first_name = "Mikhail"
-last_name = "Jacques"
-print("Hello " + first_name + " " + last_name)
-print("Aren't you are wonderful?")
-print(type(first_name))
+# print("Hello World")
+# first_name = "Mikhail"
+# last_name = "Jacques"
+# print("Hello " + first_name + " " + last_name)
+# print("Aren't you are wonderful?")
+# print(type(first_name))
 
 # variable = a container for a value. Behaves as the value that it contains
-age = 49
-age = age + 1
-print(age)
-print(type(age))
-print("Your age is: " + str(age))
+# age = 49
+# age = age + 1
+# print(age)
+# print(type(age))
+# print("Your age is: " + str(age))
 
-height = 250.5
-print(height)
-print("Your height is: " + str(height) + " cm")
-print(type(height))
-
-human = True
-robot = False
-print(human)
-print(robot)
-print(type(robot))
-print("Are you a human: " + str(human))
-
-variable1, variable2, variable3 = "value1", "value2", "value3"
-
-print(variable1)
-print(variable2)
-print(variable3)
-print(len(variable3))
+# height = 250.5
+# print(height)
+# print("Your height is: " + str(height) + " cm")
+# print(type(height))
+#
+# human = True
+# robot = False
+# print(human)
+# print(robot)
+# print(type(robot))
+# print("Are you a human: " + str(human))
+#
+# variable1, variable2, variable3 = "value1", "value2", "value3"
+#
+# print(variable1)
+# print(variable2)
+# print(variable3)
+# print(len(variable3))
 
 # string manipulation methods
-
-full_name = "Mikhail Jacques"
-print(len(full_name))
-print(full_name * 3)
-print(full_name.find("ha"))
-print(full_name.upper())
-print(full_name.lower())
-print(full_name.capitalize())
-print(full_name.isdigit())
-print(full_name.isalpha())
-print(full_name.count("a"))
-print(full_name.replace("a", "o"))
+# full_name = "Mikhail Jacques"
+# print(len(full_name))
+# print(full_name * 3)
+# print(full_name.find("ha"))
+# print(full_name.upper())
+# print(full_name.lower())
+# print(full_name.capitalize())
+# print(full_name.isdigit())
+# print(full_name.isalpha())
+# print(full_name.count("a"))
+# print(full_name.replace("a", "o"))
 
 # type casting = convert the data type of value to another data type
-
-x = 1  # int
-y = 2.5  # float
-z = "3"  # str
-
-print(x)
-print(y)
-print(int(y))
-print(y * 3)
-print(z * 3)
-
-x = float(x)
-y = float(y)
-z = float(z)
-
-print(x)
-print(y)
-print(z)
+# x = 1  # int
+# y = 2.5  # float
+# z = "3"  # str
+#
+# print(x)
+# print(y)
+# print(int(y))
+# print(y * 3)
+# print(z * 3)
+#
+# x = float(x)
+# y = float(y)
+# z = float(z)
+#
+# print(x)
+# print(y)
+# print(z)
 
 # user input
-
 # name = input("What is your name?: ")
 # age = int(input("How old are you?: "))
 # height = float(input("How tall are you?: "))
@@ -77,44 +74,42 @@ print(z)
 # print("You are " + str(height) + " cm tall")
 
 # math functions
-import math
-
-print("Math")
-
-pi = 3.14
-x1 = 1
-y1 = 2
-z1 = 3
-
-print(round(pi))
-print(math.ceil(pi))
-print(math.floor(pi))
-print(abs(pi))
-print(max(x1, y1, z1))
-print(min(x1, y1, z1))
+# import math
+#
+# print("Math")
+#
+# pi = 3.14
+# x1 = 1
+# y1 = 2
+# z1 = 3
+#
+# print(round(pi))
+# print(math.ceil(pi))
+# print(math.floor(pi))
+# print(abs(pi))
+# print(max(x1, y1, z1))
+# print(min(x1, y1, z1))
 
 # string slicing = create a substring by extracting elements from another string
-
-first = full_name[:7]  # [0:3]
-print(first)
-last = full_name[8:]  # [8:end]
-print(last)
-funky_name = full_name[::2]  # [0:end:2]
-print(funky_name)
-reversed_name = full_name[::-1]  # [0:end:-1]
-print(reversed_name)
-
-website1 = "http://google.com"
-website2 = "http://wikipedia.com"
-website3 = "http://talentedmike.com"
-
-slice_instruction = slice(7, -4)
-print(website1[slice_instruction])
-print(website2[slice_instruction])
-print(website3[slice(6, -3)])
+# first = full_name[:7]  # [0:3]
+# print(first)
+# last = full_name[8:]  # [8:end]
+# print(last)
+# funky_name = full_name[::2]  # [0:end:2]
+# print(funky_name)
+# reversed_name = full_name[::-1]  # [0:end:-1]
+# print(reversed_name)
+#
+# website1 = "http://google.com"
+# website2 = "http://wikipedia.com"
+# website3 = "http://talentedmike.com"
+#
+# slice_instruction = slice(7, -4)
+# print(website1[slice_instruction])
+# print(website2[slice_instruction])
+# print(website3[slice(6, -3)])
 
 # if statement = a block of code that will execute if it's condition is true
-
 # age = int(input('How old are you?: '))
 #
 # if age == 100:
@@ -128,19 +123,82 @@ print(website3[slice(6, -3)])
 
 
 # logical operators (and, or) = used to check if two or more conditional statements are true
+#
+# temperature = int(input("What is the temperature outside?: "))
+#
+# if 0 <= temperature <= 30:  # temperature >= 0 and temperature <= 30:
+#     print('The temperature is good today!')
+#     print('Get outside!')
+# elif temperature < 0 or temperature > 30:
+#     print('The temperature is bad today!')
+#     print('Stay inside!')
+#
+# if not (0 <= temperature <= 30):  # temperature >= 0 and temperature <= 30:
+#     print('The temperature is good today!')
+#     print('Get outside!')
+# elif not (temperature < 0 or temperature > 30):
+#     print('The temperature is bad today!')
+#     print('Stay inside!')
 
-temperature = int(input("What is the temperature outside?: "))
+# while loop = a statement that will execute its block of code, as long as it's condition remains true (unlimited)
+# name = ""
+# while len(name) == 0:
+#     name = input("Enter your name: ")
+# print("Hello " + name)
 
-if 0 <= temperature <= 30:  # temperature >= 0 and temperature <= 30:
-    print('The temperature is good today!')
-    print('Get outside!')
-elif temperature < 0 or temperature > 30:
-    print('The temperature is bad today!')
-    print('Stay inside!')
+# for loop = a statement that will execute its block of code a limited number of times (limited)
+# for ii in range(10):
+#     print(ii+1)
 
-if not (0 <= temperature <= 30):  # temperature >= 0 and temperature <= 30:
-    print('The temperature is good today!')
-    print('Get outside!')
-elif not (temperature < 0 or temperature > 30):
-    print('The temperature is bad today!')
-    print('Stay inside!')
+# for ii in range(50, 100):
+#     print(ii)
+
+# for ii in range(50, 100+1, 2):
+#     print(ii)
+
+# import time
+# for seconds in range(10, 0, -1):
+#     print(seconds)
+#     time.sleep(1)
+# print("Happy New Year")
+
+# nested loops = The "inner loop" will finish all of its iterations before finishing one iteration of the "outer loop"
+# rows = int(input("How many rows?: "))
+# columns = int(input("How many columns?: "))
+# symbol = input("Enter a symbol to use: ")
+#
+# for ii in range(rows):
+#     for jj in range(columns):
+#         print(symbol, end="")   # prevents cursor from moving to the next line5
+#     print()
+
+# Loop Control Statements = change execution of a loop execution from its normal sequence
+# break = used to terminate the loop entirely
+# continue = skips to the next iteration of the loop
+# pass = does nothing, acts as a placeholder
+
+# while True:
+#     name = input("Enter your name: ")
+#     if name != "":
+#         break
+
+# phone_number = "123-456-7890"
+# for ii in phone_number:
+#     if ii == "-":
+#         continue
+#     print(ii, end="")
+
+# for ii in range(1, 21):
+#     if ii == 13:
+#         pass
+#     else:
+#         print(ii)
+
+# list = used to store multiple items in a single variable
+food = ["pizza", "hamburger", "hotdog", "spaghetti", "pudding"]
+food[0] = "sushi"
+
+
+
+
+
