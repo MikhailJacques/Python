@@ -468,14 +468,14 @@
 # print("Hello, my name is {:>10}. Nice to meet you".format(name))    # right aligned within the padding
 # print("Hello, my name is {:^10}. Nice to meet you".format(name))    # centered within the padding
 #
-# number1 = 3.14159
-# number2 = 1000
-# print("The number PI is {:.3f}".format(number1))
-# print("The number PI is {:,}".format(number2))
-# print("The number PI is {:b}".format(number2))
-# print("The number PI is {:o}".format(number2))
-# print("The number PI is {:X}".format(number2))
-# print("The number PI is {:E}".format(number2))
+number1 = 3.14159
+number2 = 1000
+print("The number PI is {:.3f}".format(number1))
+print("The number PI is {:,}".format(number2))
+print("The number PI is {:b}".format(number2))
+print("The number PI is {:o}".format(number2))
+print("The number PI is {:X}".format(number2))
+print("The number PI is {:E}".format(number2))
 
 
 
