@@ -468,14 +468,145 @@
 # print("Hello, my name is {:>10}. Nice to meet you".format(name))    # right aligned within the padding
 # print("Hello, my name is {:^10}. Nice to meet you".format(name))    # centered within the padding
 #
-number1 = 3.14159
-number2 = 1000
-print("The number PI is {:.3f}".format(number1))
-print("The number PI is {:,}".format(number2))
-print("The number PI is {:b}".format(number2))
-print("The number PI is {:o}".format(number2))
-print("The number PI is {:X}".format(number2))
-print("The number PI is {:E}".format(number2))
+# number1 = 3.14159
+# number2 = 1000
+# print("The number PI is {:.3f}".format(number1))
+# print("The number PI is {:,}".format(number2))
+# print("The number PI is {:b}".format(number2))
+# print("The number PI is {:o}".format(number2))
+# print("The number PI is {:X}".format(number2))
+# print("The number PI is {:E}".format(number2))
+
+# #  random module for creating pseudo random numbers
+# import random
+#
+# x = random.randint(1, 6)    # generates random integer number between 1 and 6
+# print(x)
+# y = random.random()         # generates random floating point number between 0 and 1
+# print(y)
+#
+# choicesList = ['rock', 'paper', 'scissors']
+# z = random.choice(choicesList)   # generate random choice for list of possible choices
+# print(z)
+#
+# # deck of cards
+# cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K", "A"]
+# random.shuffle(cards)
+# print(cards)
+
+# # exception = events detected during execution that interrupt the flow of a program
+# try:
+#     numerator = int(input("Enter a number to divide: "))
+#     denominator = int(input("Enter a number to divide by: "))
+#     result = numerator / denominator
+# except ZeroDivisionError as e:
+#     print(e)
+#     print("You can't divide by zero! Idiot")
+# except ValueError as e:
+#     print(e)
+#     print("Enter only numbers plz")
+# except Exception as e:
+#     print(e)
+#     print("Something went terribly wrong :(")
+# else:
+#     print(result)
+# finally:
+#     print("This will always execute")
+
+# # file detection
+# import os
+#
+# path = "D:\\GitHub\\Python\\test.txt"
+#
+# if os.path.exists(path):
+#     print("That location exists!")
+#     if os.path.isfile(path):
+#         print("That is a file")
+#     elif os.path.isdir(path):
+#         print("That is a directory")
+# else:
+#     print("That location doesn't exist!")
+
+# # reading contents of a file line by line
+# try:
+#     with open('test2.txt') as file:
+#         print(file.read())
+# except FileNotFoundError:
+#     print("That file has not been found) :(")
+#
+# flag = file.closed
+# print(flag)
+
+# # writing to file
+# text = "Yooooooooo\nThis is some text\nHave a good one!\n"
+# with open('test.txt', 'w') as file:
+#     file.write(text)
+#
+# # appending to file
+# text = "Some more text\nIsn't that kewl?"
+# with open('test.txt', 'a') as file:
+#     file.write(text)
+
+# # copy files
+# # copyfile() = copies contents of a file
+# # copy() = copyfile() + permission mode + destination can be a directory
+# # copy2() = copy() + copies metadata (file's creation and modification times)
+# import shutil
+#
+# # copies contents of a file
+# shutil.copyfile('test.txt', 'copy1.txt')
+#
+# # copies contents of a file + permission mode + destination can be a directory
+# shutil.copy('test.txt', 'D:\\GitHub\\Python\\HelloWorld\\copy2.txt')
+#
+# # copies contents of a file + permission mode + destination can be a directory +
+# # copies metadata (file's creation and modification times)
+# shutil.copy2('test.txt', 'copy3.txt')
+
+# # moving files and/or directory (folder)
+# import os
+# source = "copy1.txt"
+# destination = "D:\\GitHub\\Python\\copy1.txt"
+#
+# try:
+#     # if you do not care replacing any existing files the following 'if' part may be omitted
+#     if os.path.exists(destination):
+#         print("There is already a file there")
+#     else:
+#         os.replace(source, destination)
+#         print(source + " was moved to " + destination)
+# except FileNotFoundError:
+#     print(source + " was not found")
+
+# # deleting files
+# import os
+# import shutil
+# path = 'copy2.txt'
+# # path = 'empty_folder'
+#
+# try:
+#     os.remove(path)           # delete a file
+#     # os.rmdir(path)            # delete an empty directory or a file
+#     # shutil.rmtree(path)       # delete a directory containing files
+# except FileNotFoundError:
+#     print("That file was not found")
+# except PermissionError:
+#     print("You do not have permission to delete that")
+# except OSError:
+#     print("That folder contains files")
+# else:
+#     print(path + " deletion was successful")
+
+# module = a file containing python code. May contain functions, classes, etc.
+# Used with modular programming, which is to separate a program into parts
+
+# import messages
+# import messages as m
+# from messages import hello.bye
+# from messages import * (this one is dangerous)
+
+
+
 
 
 
