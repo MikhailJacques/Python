@@ -1,4 +1,49 @@
-# # # Game of rock, paper, scissors (OpenAI ChatGPT4 via voice command generated)
+# Game of rock, paper, scissors (OpenAI ChatGPT4 generated)
+import random
+
+
+def play():
+    user = input("What's your choice? 'rock', 'paper', or 'scissors': ")
+    user = user.lower()
+
+    while user != 'rock' and user != 'paper' and user != 'scissors':
+        user = input("Invalid input. Please enter 'rock', 'paper', or 'scissors'\n")
+
+    computer = random.choice(['rock', 'paper', 'scissors'])
+
+    if user == computer:
+        return f"Both you and the computer chose {user}. It's a tie!"
+
+    if win(user, computer):
+        return f"You chose {user} and the computer chose {computer}. You won!"
+
+    return f"You chose {user} and the computer chose {computer}. You lost!"
+
+
+def win(player, opponent):
+    # return true if player wins
+    # rock > scissors, scissors > paper, paper > rock
+    if (player == 'rock' and opponent == 'scissors') or (player == 'scissors' and opponent == 'paper') \
+            or (player == 'paper' and opponent == 'rock'):
+        return True
+
+
+def game():
+    print("Rock, Paper, Scissors Game\n")
+    print("You are playing against the computer. The game will continue until you decide to quit.\n")
+
+    while True:
+        print(play())
+        play_again = input("Do you want to play again? (y/n): ")
+        while play_again.lower() not in ['y', 'n']:
+            play_again = input("Invalid input. Please enter 'y' or 'n': ")
+        if play_again.lower() == 'n':
+            break
+
+
+
+
+# # Game of rock, paper, scissors (OpenAI ChatGPT4 via voice command generated)
 # import random
 #
 #
@@ -37,50 +82,3 @@
 #
 # if __name__ == "__main__":
 #     main()
-#
-#
-# # # Game of rock, paper, scissors (OpenAI ChatGPT4 generated)
-# # import random
-# #
-# #
-# # def play():
-# #     user = input("What's your choice? 'rock', 'paper', or 'scissors': ")
-# #     user = user.lower()
-# #
-# #     while user != 'rock' and user != 'paper' and user != 'scissors':
-# #         user = input("Invalid input. Please enter 'rock', 'paper', or 'scissors'\n")
-# #
-# #     computer = random.choice(['rock', 'paper', 'scissors'])
-# #
-# #     if user == computer:
-# #         return f"Both you and the computer chose {user}. It's a tie!"
-# #
-# #     if win(user, computer):
-# #         return f"You chose {user} and the computer chose {computer}. You won!"
-# #
-# #     return f"You chose {user} and the computer chose {computer}. You lost!"
-# #
-# #
-# # def win(player, opponent):
-# #     # return true if player wins
-# #     # rock > scissors, scissors > paper, paper > rock
-# #      if (player == 'rock' and opponent == 'scissors') or (player == 'scissors' and opponent == 'paper')\
-# #              or (player == 'paper' and opponent == 'rock'):
-# #         return True
-# #
-# #
-# # def game():
-# #     print("Rock, Paper, Scissors Game\n")
-# #     print("You are playing against the computer. The game will continue until you decide to quit.\n")
-# #
-# #     while True:
-# #         print(play())
-# #         play_again = input("Do you want to play again? (y/n): ")
-# #         while play_again.lower() not in ['y', 'n']:
-# #             play_again = input("Invalid input. Please enter 'y' or 'n': ")
-# #         if play_again.lower() == 'n':
-# #             break
-# #
-# #
-# # # Run the game
-# # game()
