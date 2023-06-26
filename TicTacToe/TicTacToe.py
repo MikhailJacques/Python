@@ -11,10 +11,9 @@
 #
 # # Press the green button in the gutter to run the script.
 # if __name__ == '__main__':
-#     print_hi('PyCharm')
+#     print_hi('PyCharm')__name__
 #
 # # See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
 
 def print_board(board):
     for row in board:
@@ -74,4 +73,3 @@ def tic_tac_toe():
 
 if __name__ == "__main__":
     tic_tac_toe()
-
